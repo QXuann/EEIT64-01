@@ -1,0 +1,273 @@
+footer {
+    background-color: #624949;
+    color: #dfd3d3c2;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+.footer-left {
+    width: 280px;
+    margin-right: 10px;
+}
+
+.footer-left h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: rgb(230, 224, 223);
+}
+
+.footer-left p {
+    margin: 10px;
+}
+
+.footer-center {
+    width: 280px;
+    margin-right: 20px;
+}
+
+.footer-center h4 {
+    color: rgb(230, 224, 223);
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.footer-center p {
+    margin: 10px;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right li {
+    margin-left: 20px;
+}
+
+.footer-right li:first-child {
+    margin-left: 0;
+}
+
+.footer-right a {
+    color: #878181;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+
+/* 支付方式 */
+.pay {
+    width: 280px;
+    margin-right: 10px;
+}
+
+.pay h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: rgb(230, 224, 223);
+}
+
+.pay ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pay li {
+    margin-right: 30px;
+}
+
+.pay li:last-child {
+    margin-right: 0;
+}
+
+.pay ul {
+    list-style: none;
+}
+
+#applepayimg {
+    width: 35px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#masterimg {
+    width: 35px;
+    height: 30px;
+    margin-top: 5px;
+}
+#visaimg {
+    width: 35px;
+    height: 30px;
+    margin-top: 5px;
+}
+#linepayimg {
+    width: 70px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+
+
+/* 關注我們 */
+
+.footer-right {
+    width: 280px;
+    margin-right: 10px;
+}
+
+.footer-right h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: rgb(230, 224, 223);
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    
+}
+
+
+.footer-right ul li {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    /* margin: 0 3px; */
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0px solid #D8E2DC;
+    float: left;
+    transition: all 0.2s ease;
+}
+
+
+
+#fbimg {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#igimg {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#lineimg {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+#gmailimg {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+#shoppeeimg {
+    width: 33px;
+    height: 33px;
+    margin-top: 5px;
+}
+
+
+
+
+/* 動態 */
+/*facebook*/
+.footer-right ul li:hover.facebook {
+    border: 3px solid #3b5998;
+    box-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+
+.footer-right ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+
+/*twitter*/
+.footer-right ul li:hover.twitter {
+    border: 3px solid #00aced;
+    box-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+
+.footer-right ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+
+/* instagram */
+.footer-right ul li:hover.instagram {
+    border: 3px solid #d13050;
+    box-shadow: 0 0 5px #313337ce;
+    transition: all 0.1s ease;
+}
+
+.footer-right ul li:hover .fa-instagram {
+    color: #d13050;
+    text-shadow: 0 0 5px #313337ce;
+    transition: all 0.1s ease;
+}
+
+/* google */
+.footer-right ul li:hover.google {
+    border: 3px solid #dd4b39;
+    box-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+
+.footer-right ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+
+/* line */
+.footer-right ul li:hover.line {
+    border: 3px solid #4dc247;
+    box-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+
+.footer-right ul li:hover .fa-line {
+    color: #4dc247;
+    text-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+/* shoppee */
+.footer-right ul li:hover.shoppee {
+    border: 3px solid #bf6319;
+    box-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}
+
+.footer-right ul li:hover .fa-shoppee {
+    color: #4dc247;
+    text-shadow: 0 0 5px #313337ce;
+    transition: all 0.2s ease;
+}

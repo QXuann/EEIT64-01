@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./導覽列.css">
+  <title>永生花盆</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/94fcc9ba0b.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+
+  fetch('./永生花盆.json')
+    .then(response => response.json())
+    .then(data => {
+      // 取得產品列表容器
+      const productList = document.querySelector('.allproduct');
+      // 刪原本資料
+      productList.textContent = '';
+      // 計數器，用於計算每列產品數
+      let rowCounter = 0;
+      // 創建新的行
+      let newRow = document.createElement('tr');
+
+      // 迭代 JSON 資料中的每個產品
+      data.forEach(product => {
+        // 創建產品元素
+        const imageElement = document.createElement('img');
+        imageElement.src = product.imageUrl;
+
+        const nameElement = document.createElement('h2');
+        nameElement.textContent = product.name;
+
+        const priceElement = document.createElement('p');
+        priceElement.textContent = `價格：${product.price} 元`;
+
+        const sizeElement = document.createElement('p');
+        sizeElement.textContent = `尺吋：${product.size}`;
+
+        const buttonElement = document.createElement('button');
+        buttonElement.textContent = "加入購物車";
+        buttonElement.className = "but-addcar";
+        buttonElement.innerHTML = '加入購物車';
+
+
+        const quantityElement = document.createElement('input');
+        quantityElement.type = 'number';
+        quantityElement.value = 1;
+        quantityElement.classList.add('quantity');
+
+
+
+        // 從json裡取出名子
+        buttonElement.dataset.productName = product.name
+        buttonElement.dataset.productPrice = product.price
+        buttonElement.dataset.productImage = product.imageUrl
+
+
+
+        // 創建新的儲存格
+        const cell = document.createElement('td');
+        cell.appendChild(imageElement);
+        cell.appendChild(nameElement);
+        cell.appendChild(priceElement);
+        cell.appendChild(sizeElement);
+        cell.appendChild(quantityElement);
+        cell.appendChild(buttonElement);
+
+        // 將儲存格加入到目前的行
+        newRow.appendChild(cell);
+
+        // 檢查是否已經有三個產品，若是則插入目前的行，並創建新的行
+        rowCounter++;
+        if (rowCounter % 3 === 0) {
+          productList.appendChild(newRow);
+          newRow = document.createElement('tr');
+        }
+      });
+
+      // 檢查最後一個行是否為空白行，若是則刪除
+      if (rowCounter % 3 !== 0) {
+        productList.appendChild(newRow);
+      }
+    }
+    )
+    .catch(error => console.error(error))
+
+  // 點擊加入購物車按鈕時觸發
+  $(document).on('click', '.but-addcar', function () {
+    // 讀取 localStorage 中的購物車資料，若無則初始化為空物件
+    let cart = JSON.parse(localStorage.getItem('cart')) || {};
+
+    // 從 dataset 中讀取產品名稱、價格和圖片
+    let productName = $(this).data('productName');
+    let productPrice = $(this).data('productPrice');
+    let productImage = $(this).data('productImage');
+
+    // 從按鈕所在的 <tr> 中找到對應的 <input> 元素，取得其值作為產品數量
+    let quantity = $(this).closest('td').find('.quantity').val();
+
+
+    // 檢查購物車中是否已經有該產品，若有則增加數量，若無則新增產品
+    if (cart[productName]) {
+      cart[productName].quantity += parseInt(quantity);
+    } else {
+      cart[productName] = {
+        quantity: parseInt(quantity),
+        price: parseInt(productPrice),
+        image: productImage,
+      };
+    }
+
+    // 將更新後的購物車資料存回 localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // 顯示提示訊息
+    alert('已加入購物車！');
+  });
+
+</script>
+
+
+<body>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand" style="color: white;"><a>Good Day ．花藝</a></div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li><a href="./專題首頁.html">首頁</a></li>
+          <li><a href="./節日限定.html">節日限定</a></li>
+          <li class="dropdown"><a href="#!">產品系列</a>
+            <ul class="nav-dropdown">
+              <li><a href="#">◢玻璃花盅</a></li>
+              <li><a href="./精緻花束.html">◢精緻花束</a></li>
+              <li><a href="./永生花盆.html">◢永生花盆</a></li>
+              <li><a href="#">◢婚禮捧花</a></li>
+              <li><a href="#">◢心意小禮</a></li>
+            </ul>
+          </li>
+          <li><a href="./購物車.html">購物車</a></li>
+          <li><a href="./聯絡我們.html">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <script src="./導覽列.js"></script>
+
+
+  <!-- gpt給我的 -->
+  <link rel="stylesheet" href="./永生花盆.css">
+  <table class="allproduct">
+    <tr>
+      <td>
+        <img src="./永生花盆/1永生玫瑰白.jpg">
+        <h2></h2>
+        <p>價格：</p>
+        <p>供應狀況：</p>
+        <p>尺寸： (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+      <td>
+        <img src="./永生花盆/2春曉之鳴 永生玫瑰盆栽.jpg">
+        <h2>春曉之鳴 永生玫瑰盆栽</h2>
+        <p>價格：$1680</p>
+        <p>供應狀況：現貨</p>
+        <p>尺寸：23cm*24cm (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+      <td>
+        <img src="./永生花盆/3初見木蘭永生玫瑰盆栽.jpg">
+        <h2>初見木蘭永生玫瑰盆栽</h2>
+        <p>價格：$2280</p>
+        <p>供應狀況：現貨</p>
+        <p>尺寸：23cm*24cm (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./永生花盆/4少女的溫柔乾燥花名片座.jpg">
+        <h2>少女的溫柔乾燥花名片座</h2>
+        <p>價格：$690</p>
+        <p>供應狀況：現貨</p>
+        <p>尺寸：12cm*13cm (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+      <td>
+        <img src="./永生花盆/5獨享的香頌永生玫瑰盆栽 開幕盆栽.jpg">
+        <h2>獨享的香頌永生玫瑰盆栽</h2>
+        <p>價格：$3280</p>
+        <p>供應狀況：預購</p>
+        <p>尺寸：40cm*23cm (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+      <td>
+        <img src="./永生花盆/6陌上花開永生玫瑰盆栽 開幕盆栽.jpg">
+        <h2>陌上花開永生玫瑰盆栽</h2>
+        <p>價格：$2580</p>
+        <p>供應狀況：現貨</p>
+        <p>尺寸：33cm*38cm (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./永生花盆/7秋日來信乾燥花盆栽 開幕盆栽.jpg">
+        <h2>秋日來信乾燥花盆栽</h2>
+        <p>價格：$1480</p>
+        <p>供應狀況：現貨</p>
+        <p>尺寸：26cm*22cm (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+      <td>
+        <img src="./永生花盆/8柏林之音永生玫瑰盆栽 開幕盆栽.jpg">
+        <h2>柏林之音永生玫瑰盆栽</h2>
+        <p>價格：$1880</p>
+        <p>供應狀況：現貨</p>
+        <p>尺寸：23cm*20cm (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+      <td>
+        <img src="./永生花盆/9微醺時刻永生玫瑰歐風復古盆栽.jpg">
+        <h2>微醺時刻永生玫瑰歐風復古盆栽</h2>
+        <p>價格：$1980</p>
+        <p>供應狀況：現貨</p>
+        <p>尺寸：22cm*21cm (寬*高)</p>
+        <button class="but-addcar">加入購物車</button>
+      </td>
+    </tr>
+
+
+  
+</body>
+
+</html>

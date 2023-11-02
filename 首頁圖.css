@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.intotext {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.intobut {
+  text-align: center;
+  border-radius: 20px;
+  background-color: #ffffff33;
+  margin-left: 80px;
+}
+
+#into1 {
+  margin-left: 55px;
+}
+/* into2正常所以沒有調整 */
+#into3 {
+  margin-left: 95px
+}
+
+.container {
+  display: flex;
+  height: 92vh;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  transition: flex .4s ease;
+  position: relative;
+}
+
+.section .overlay {
+  background-color: rgba(46, 46, 46, 0.547);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: background-color .8s ease;
+}
+
+.section .content {
+  z-index: 2;
+}
+
+.section:hover {
+  flex: 2;
+}
+
+.section:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+#marketing {
+  background-image: url(./乾燥花大圖/O1CN01oi2Qft2M1nUToj99s_!!2208087159768.jpg);
+}
+
+
+
+
+#technology {
+  background-image: url(./乾燥花大圖/7479516.jpeg);
+}
+
+#advertising {
+  background-image: url(./乾燥花大圖/bbbcff8cc03865ca2514190a6989b5d8.jpg);
+}

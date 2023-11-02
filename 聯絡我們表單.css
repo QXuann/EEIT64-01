@@ -1,0 +1,146 @@
+/* 背景開始 */
+body{
+  background-image:url("./乾燥花大圖/3983232b-d102-4d82-9642-30e7f367dd72.jpeg");
+  opacity:90%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  position: relative; /* 父元素要設定為相對定位 */
+}
+
+body::before { /* 使用偽元素 ::before 來實現遮罩 */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.244); /* 設定白色透明度濾鏡遮罩的顏色 */
+  z-index: -1; /* 將偽元素移動到背景圖片下面 */
+}
+
+/* 背景結束 */
+
+
+.contactwrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+
+/* 聯絡表單 */
+.container {
+  display: inline-block;
+  width: 500px;
+  margin-right: 0;
+  margin-left: 200px;
+  position: relative;
+}
+
+#contact {
+  background: #887a7a88;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 20px
+}
+
+#contact h2 {
+  color: #FFF;
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: medium none ;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 95%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 10px
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #70594e;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px
+}
+
+#contact button[type="submit"]:hover {
+  background: #432d2d;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* 聯絡資訊 */
+
+.contact-right {
+  width: 500px;
+  height: 480px;
+  background-color: #ffffffba;
+  display: inline-block;
+  margin : 150px 200px 150px 10% ;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* icon */
+.contactdata img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  margin-left: 100px;
+}
+
+#contacticons{
+  margin-top: 50px;
+}
+
+#contacttitle{
+  color: #3c614b;
+  font-size: 28px;
+  margin-left: 60px;
+}
+
+#add{
+  color: #3e5b49d0;
+  margin-left: 80px;
+  margin-top: 2px;
+}
+
+.contactdata p {
+  display: flex;
+  align-items: center;
+  color: #3c614b ;
+}

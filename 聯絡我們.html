@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./導覽列.css">
+  <title>Good Day｜花藝</title>
+</head>
+
+<body>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand" style="color: white;"><a>Good Day ．花藝</a></div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li><a href="./專題首頁.html">首頁</a></li>
+          <li><a href="./節日限定.html">節日限定</a></li>
+          <li class="dropdown"><a href="#!">產品系列</a>
+            <ul class="nav-dropdown">
+              <li><a href="#">◢玻璃花盅</a></li>
+              <li><a href="./精緻花束.html">◢精緻花束</a></li>
+              <li><a href="./永生花盆.html">◢永生花盆</a></li>
+              <li><a href="#">◢婚禮捧花</a></li>
+              <li><a href="#">◢心意小禮</a></li>
+            </ul>
+          </li>
+          <li><a href="./購物車.html">購物車</a></li>
+          <li><a href="./聯絡我們.html">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <script src="./導覽列.js"></script>
+
+
+
+  <link rel="stylesheet" href="./聯絡我們測試.css">
+  <!-- 聯絡我們表單 -->
+  <div class="container" style="display: inline-block">
+    <form id="contact" action="./表單已提交頁面.html" method="post">
+      <h2>聯絡我們</h2>
+      <fieldset>
+        <input placeholder="Name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <label>
+          <input type="radio" name="gender" value="male" tabindex="2">男性
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" tabindex="3">女性
+        </label>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Phone Number" type="tel" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Email" type="email" tabindex="5" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="6" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">送出</button>
+      </fieldset>
+    </form>
+    <script>
+      const form = document.getElementById('contact');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // 防止表单直接提交
+        window.location.href = './表單已提交頁面.html'; // 将浏览器重定向到指定的网页
+      });
+    </script>
+  </div>
+
+  <!-- google地圖 -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.0870214678594!2d120.64353861481538!3d24.13358188440188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dd8d0fe05ff%3A0x25f56fec1b88f61a!2z6Kaq5a62b25lIGNpdHk!5e0!3m2!1szh-TW!2stw!4v1681309279653!5m2!1szh-TW!2stw"
+    width="600" height="450" ;;allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+
+</div>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>Good Day 好日子</h3>
+      <hr>
+      <p>營業時間：</p>
+      <p>平日&nbsp;10:00-19:00</p>
+      <p>週六&nbsp;10:30-20:00</p>
+      <p>（周日固定公休）</p>
+    </div>
+
+    <div class="footer-center">
+      <h4>聯絡資訊</h4>
+      <hr>
+      <p>電話：04-2345-6789</p>
+      <p>信箱：goodday528@gmail.com</p>
+      <p>地址：台中市南屯區文心南三路528號1樓</p>
+    </div>
+
+      <div class="pay">
+        <h4>付款方式</h4>
+        <hr>
+      <ul>
+        <li class="applepay"><img id="applepayimg" src="./icon/apple-pay.png"></li>
+        <li class="master"><a href="#"><img id="masterimg" src="./icon/mastercard.png"></a></li>
+        <li class="visa"><a href="#"><img id="visaimg" src="./icon/visa.png"></a></li>
+        <li class="linepay"><img id="linepayimg" src="./icon/card_linepay.png"></a></li>
+        
+      </ul>
+      </div>
+
+    <link rel="stylesheet" href="./footer.css">
+    <div class="footer-right">
+      <h4>關注我們</h4>
+      <hr>
+      <ul>
+        <li class="facebook"><img id="fbimg" src="./icon/facebook.png"></a></li>
+        <li class="instagram"><a href="#"><img id="igimg" src="./icon/instagram.png"></a></li>
+        <li class="line"><img id="lineimg" src="./icon/line.png"></a></li>
+        <li class="google"><img id="gmailimg" src="./icon/gmail.png"></a></li>
+        <li class="shoppee"><img id="shoppeeimg" src="./icon/蝦皮圓.png"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</html>

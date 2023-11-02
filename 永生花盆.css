@@ -1,0 +1,80 @@
+table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 20px;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  
+  td {
+    background-color: rgba(255, 255, 255, 0.523);
+    width:100px ;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #e3bbbb;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(232, 208, 208);
+  }
+  
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 4px 3px darkgrey;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 0.9em;
+    margin: 0;
+  }
+
+  input {
+    width:  50px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: #f9f9f9;
+    box-shadow: 1px 1px darkgray;
+    text-align: center;
+  }
+
+  .but-addcar {
+    width: 115px;
+    height: 30px;
+    border: 0;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 14px;
+    background: #d94e4e;
+    padding: 4px 20px 1px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .but-addcar:hover {
+    background: #e88686;
+    text-decoration: none;
+  }
+
+  
+  td>h2 {
+    font-size: 20px;
+    color: #483f3f;
+    margin-bottom: 10px;
+  }
+
+  td>p {
+    font-size: 8px;
+    margin-bottom: 5px;
+  }

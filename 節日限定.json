@@ -1,0 +1,59 @@
+[
+    {
+      "name": "浪漫相遇永生玫瑰花束",
+      "price":"1680",
+      "availability": "有現貨",
+      "size": "32cm*50cm (寬*高)",
+      "imageUrl":"./花束/1.jpg"
+    },
+    {
+        "name": "回想旅途棉花花束",
+        "price":"590",
+        "availability": "有現貨",
+        "size": "18cm*18cm (寬*高)",
+        "imageUrl":"./花束/2.jpg"
+    },
+    {
+        "name": "33朵進口永生玫瑰巨大花束",
+        "price":"13500",
+        "availability": "有現貨",
+        "size": "高度 : 120cm ",
+        "imageUrl":"./花束/3.jpg"
+    },
+    {
+        "name": "花影晃悠悠永生玫瑰情人節花束",
+        "price":"990",
+        "availability": "有現貨",
+        "size": "25cm*35cm (寬*高)",
+        "imageUrl":"./花束/4.jpg"
+    },
+    {
+        "name": "浪漫愛情永生玫瑰大花束",
+        "price":"4380",
+        "availability": "有現貨",
+        "size": "48cm*60cm (寬*高)",
+        "imageUrl":"./花束/5.jpg"
+    },
+    {
+        "name": "戀愛日記本永生花束",
+        "price":"990",
+        "availability": "有現貨",
+        "size": "35cm*40cm (寬*高)",
+        "imageUrl":"./花束/6.jpg"
+    },
+    {
+        "name": "幸福記號永生玫瑰花束",
+        "price":"890",
+        "availability": "有現貨",
+        "size": "28cm*30cm (寬*高)",
+        "imageUrl":"./花束/7.jpg"
+    },
+    {
+        "name": "漫主義永生厄瓜多玫瑰大花束",
+        "price":"4580",
+        "availability": "有現貨",
+        "size": "50cm*70cm (寬*高)",
+        "imageUrl":"./花束/8.jpg"
+    }
+    
+  ]

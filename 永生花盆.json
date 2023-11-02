@@ -1,0 +1,65 @@
+[
+    {
+      "name": "晨之芬芳 永生玫瑰盆栽",
+      "price":"1980",
+      "availability": "有現貨",
+      "size": "17cm*24cm (寬*高)",
+      "imageUrl":"./永生花盆/1永生玫瑰白.jpg"
+    },
+    {
+        "name": "春曉之鳴 永生玫瑰盆栽",
+        "price":"1680",
+        "availability": "有現貨",
+        "size": "23cm*24cm (寬*高)",
+        "imageUrl":"./永生花盆/2春曉之鳴 永生玫瑰盆栽.jpg"
+    },
+    {
+        "name": "初見木蘭永生玫瑰盆栽",
+        "price":"2280",
+        "availability": "有現貨",
+        "size": "23cm*24cm (寬*高)",
+        "imageUrl":"./永生花盆/3初見木蘭永生玫瑰盆栽.jpg"
+    },
+    {
+        "name": "少女的溫柔乾燥花名片座",
+        "price":"690",
+        "availability": "有現貨",
+        "size": "12cm*13cm (寬*高)",
+        "imageUrl":"./永生花盆/4少女的溫柔乾燥花名片座.jpg"
+    },
+    {
+        "name": "獨享的香頌永生玫瑰盆栽 開幕盆栽 ",
+        "price":"3280",
+        "availability": "需預購",
+        "size": "40cm*23cm (寬*高)",
+        "imageUrl":"./永生花盆/5獨享的香頌永生玫瑰盆栽 開幕盆栽.jpg"
+    },
+    {
+        "name": "陌上花開永生玫瑰盆栽 開幕盆栽 ",
+        "price":"2580",
+        "availability": "有現貨",
+        "size": "33cm*38cm (寬*高)",
+        "imageUrl":"./永生花盆/6陌上花開永生玫瑰盆栽 開幕盆栽.jpg"
+    },
+    {
+        "name": "秋日來信乾燥花盆栽 開幕盆栽 ",
+        "price":"1480",
+        "availability": "有現貨",
+        "size": "26cm*22cm (寬*高)",
+        "imageUrl":"./永生花盆/7秋日來信乾燥花盆栽 開幕盆栽.jpg"
+    },
+    {
+        "name": "柏林之音永生玫瑰盆栽 開幕盆栽 ",
+        "price":"1880",
+        "availability": "有現貨",
+        "size": "23cm*20cm (寬*高)",
+        "imageUrl":"./永生花盆/8柏林之音永生玫瑰盆栽 開幕盆栽.jpg"
+    },
+    {
+        "name": "微醺時刻永生玫瑰歐風復古盆栽 ",
+        "price":"1980",
+        "availability": "有現貨",
+        "size": "22cm*21cm (寬*高)",
+        "imageUrl":"./永生花盆/9微醺時刻永生玫瑰歐風復古盆栽.jpg"
+    }
+  ]

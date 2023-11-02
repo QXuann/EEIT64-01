@@ -1,0 +1,180 @@
+/* 聯絡表單 */
+
+/* 表單上的div */
+.container {
+  display: inline-block;
+  width: 600px;
+  margin-right: 0;
+  margin-left: 150px;
+  position: relative;
+  
+}
+
+/* 表單form */
+#contact {
+  background: #887a7a88;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
+  position: relative;
+  top: 0px;
+}
+
+/* 聯絡我們四個字 */
+#contact h2 {
+  color: #FFF;
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* 所有輸入框 */
+fieldset {
+  border: medium none;
+  margin: 0 0 10px;
+  padding: 0;
+  width: 100%;
+}
+
+/* 名字~電話框 */
+fieldset input[type="text"],
+fieldset input[type="email"],
+fieldset input[type="tel"],
+fieldset input[type="url"] {
+  width: 95%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 10px
+}
+
+fieldset input[type="radio"]{
+  cursor: pointer;
+}
+
+fieldset input[type="text"]{
+  width: 40%;
+}
+
+
+/* 訊息框 */
+fieldset textarea {
+  width: 95%;
+  height: 120px;
+  border: 1px solid #ccc;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+
+}
+
+
+/* 送出按鈕 */
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #70594e;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 15px
+}
+
+/* 滑鼠碰到按鈕的效果 */
+#contact button[type="submit"]:hover {
+  background: #432d2d;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* 地圖 */
+iframe {
+  width: 600px;
+  height: 515px;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+
+
+footer {
+  background-color: #624949;
+  color: #dfd3d3c2;
+  padding:10px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0px auto;
+}
+
+.footer-left {
+  width: 280px;
+  margin-right: 10px;
+}
+
+.footer-left h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgb(230, 224, 223);
+}
+
+.footer-left p {
+  margin: 10px;
+}
+
+.footer-center {
+  width: 280px;
+  margin-right: 20px;
+}
+
+.footer-center h4 {
+  color: rgb(230, 224, 223);
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.footer-center p {
+ margin: 10px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-right li {
+  margin-left: 20px;
+}
+
+.footer-right li:first-child {
+  margin-left: 0;
+}
+
+.footer-right a {
+  color: #878181;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
